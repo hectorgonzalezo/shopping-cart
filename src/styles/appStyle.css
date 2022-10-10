@@ -1,0 +1,14 @@
+
+@import './reset.css';
+
+.App {
+  display: grid;
+  grid-template-rows: 150px 1fr 50px;
+  background-color: lightgrey;
+  height: 100vh;
+  width: 100vw;
+}
+
+* {
+  outline: 1px dashed red;
+}

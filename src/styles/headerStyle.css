@@ -1,0 +1,16 @@
+.App header{
+  display: flex;
+  align-items: center;
+}
+
+header h1{
+  flex-grow: 2;
+}
+
+ul{
+  flex-grow: 1;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
