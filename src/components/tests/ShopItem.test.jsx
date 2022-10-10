@@ -6,5 +6,11 @@ import ShopItem from '../ShopItem';
 
 describe('Shop items', () => {
   it('Renders correctly', () => {
+    render(<ShopItem name="Car" />);
+
+    expect(screen.getByRole('heading')).toHaveTextContent('Car');
+    expect(screen.getByRole('img').getAttribute('src')).toBe('teensylc.jpeg');
+
+    expect(screen.container).toMatchSnapshot();
   });
 });

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import uniqid from 'uniqid';
 import products from '../assets/products.json';
+import ShopItem from './ShopItem';
 
 function Shop({ opaque }) {
   const [items, setItems] = useState([]);
@@ -16,7 +17,7 @@ function Shop({ opaque }) {
   return (
     <main id="shop" className={opaque ? 'opaque' : ''}>
       <h1>this is the shop</h1>
-      {items.map((item) => <h1 key={uniqid()}>{item.name}</h1>)}
+      {items.map((item) => <ShopItem key={uniqid()} name={item.name} img={item.img} />)}
     </main>
   );
 }

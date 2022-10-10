@@ -2,84 +2,84 @@
 	"teensy2":{
 		"type":"board",
 		"name": "Teensy 2.0",
-		"img": "./products/teensy20.jpeg",
+		"img": "teensy20.jpeg",
 		"speed": "16 MHz AVR",
 		"signal": "5V signals"
 	},
 	"teensy+2":{
 		"type":"board",
 		"name": "Teensy++ 2.0",
-		"img": "./products/teensypp20.jpeg",
+		"img": "teensypp20.jpeg",
 		"speed": "16 MHz AVR",
 		"signal": "5V signals"
 	},
 	"teensyLC":{
 		"type":"board",
 		"name": "Teensy LC",
-		"img": "./products/teensylc.jpeg",
+		"img": "teensylc.jpeg",
 		"speed": "48 MHz Cortex-M0+",
 		"signal": "3.3V signals"
 	},
 	"teensy35":{
 		"type":"board",
 		"name": "Teensy 3.5",
-		"img": "./products/teensy35.jpeg",
+		"img": "teensy35.jpeg",
 		"speed": "120 MHz Cortex-M4F",
 		"signal": "3.3V signals, 5V tolerant"
 	},
 	"teensy32":{
 		"type":"board",
 		"name": "Teensy 3.2",
-		"img": "./products/teensy32.jpeg",
+		"img": "teensy32.jpeg",
 		"speed": "72 MHz Cortex-M4",
 		"signal": "3.3V signals, 5V tolerant"
 	},
 	"teensy36":{
 		"type":"board",
 		"name": "Teensy 3.6",
-		"img": "./products/teensy36.jpeg",
+		"img": "teensy36.jpeg",
 		"speed": "180 MHz Cortex-M4F",
 		"signal": "3.3V signals"
 	},
 	"teensy40":{
 		"type":"board",
 		"name": "Teensy 4.0",
-		"img": "./products/teensy40.jpeg",
+		"img": "teensy40.jpeg",
 		"speed": "600 MHz Cortex-M7",
 		"signal": "3.3V signals"
 	},
 	"teensy41":{
 		"type":"board",
 		"name": "Teensy 4.1",
-		"img": "./products/teensy41.jpeg",
+		"img": "teensy41.jpeg",
 		"speed": "600 MHz Cortex-M7",
 		"signal": "3.3V signals"
 	},
 	"touchScreen":{
 		"type":"component",
 		"name": "Color Touchscreen",
-		"img": "./products/touch-display.jpeg",
+		"img": "touch-display.jpeg",
 		"resolution": "320X240",
 		"size": "2.8 inch"
 	},
 	"ocoto28Adaptor":{
 		"type":"adaptor",
 		"name": "OctoWS2811 Adaptor",
-		"img": "./products/octo28_adaptor_1.jpeg"
+		"img": "octo28_adaptor_1.jpeg"
 	},
 	"audioAdaptor":{
 		"type":"adaptor",
 		"name": "Audio adaptor",
-		"img": "./products/teensy3_audio.jpeg"
+		"img": "teensy3_audio.jpeg"
 	},
 	"sdAdaptor":{
 		"type":"adaptor",
 		"name": "SD Adaptor",
-		"img": "./products/sd_adaptor.jpeg"
+		"img": "sd_adaptor.jpeg"
 	},
 	"tutorialKit":{
 		"type":"kit",
 		"name": "Parts for Teensedyuino Tutorials",
-		"img": "./products/tutorial_kit.jpeg"
+		"img": "tutorial_kit.jpeg"
 	}
 }

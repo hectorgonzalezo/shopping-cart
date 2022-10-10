@@ -25,7 +25,10 @@
       "airbnb",
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+	  "eol-last": "off"
+    }
   },
   "browserslist": {
     "production": [
