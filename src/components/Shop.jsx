@@ -2,9 +2,9 @@ import React from 'react';
 
 function Shop() {
   return (
-    <div id="shop">
+    <main id="shop">
       <h1>this is the shop</h1>
-    </div>
+    </main>
   );
 }
 
