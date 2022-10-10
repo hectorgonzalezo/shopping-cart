@@ -79,7 +79,7 @@
 	},
 	"tutorialKit":{
 		"type":"kit",
-		"name": "Parts for Teensedyuino Tutorials",
+		"name": "Kit for Teenseduino Tutorials",
 		"img": "tutorial_kit.jpeg"
 	}
 }

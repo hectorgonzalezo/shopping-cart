@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 function ShopItem({ name, img }) {
   return (
     <div className="item">
-      <h1>{name}</h1>
       <img src={require(`../assets/products/${img}`)} />
+      <h1>{name}</h1>
     </div>
   );
 }

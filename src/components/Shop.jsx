@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import uniqid from 'uniqid';
 import products from '../assets/products.json';
 import ShopItem from './ShopItem';
+import '../styles/shopStyle.css';
 
 function Shop({ opaque }) {
   const [items, setItems] = useState([]);
@@ -17,7 +18,11 @@ function Shop({ opaque }) {
   return (
     <main id="shop" className={opaque ? 'opaque' : ''}>
       <h1>this is the shop</h1>
-      {items.map((item) => <ShopItem key={uniqid()} name={item.name} img={item.img} />)}
+      <div id="items">
+        {items.map((item) => (
+          <ShopItem key={uniqid()} name={item.name} img={item.img} />
+        ))}
+      </div>
     </main>
   );
 }
