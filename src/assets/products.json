@@ -1,4 +1,4 @@
-"products": {
+{
 	"teensy2":{
 		"type":"board",
 		"name": "Teensy 2.0",

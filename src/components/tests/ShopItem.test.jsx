@@ -2,13 +2,9 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
-import Shop from '../Shop';
+import ShopItem from '../ShopItem';
 
-describe('Header component', () => {
+describe('Shop items', () => {
   it('Renders correctly', () => {
-    render(<Shop />);
-
-    expect(screen.getByRole('main')).toHaveAttribute('id', 'shop');
-    expect(screen.container).toMatchSnapshot();
   });
 });

@@ -11,8 +11,12 @@ function Cart({ visible, hideCartFunc }) {
   );
 }
 
+Cart.defaultProps = {
+  visible: false,
+};
+
 Cart.propTypes = {
-  visible: PropTypes.bool.isRequired,
+  visible: PropTypes.bool,
   hideCartFunc: PropTypes.func.isRequired,
 };
 
