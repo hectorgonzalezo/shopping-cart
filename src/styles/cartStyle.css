@@ -1,0 +1,14 @@
+#cart {
+  position: absolute;
+  background-color: red;
+  height: 100vh;
+  width: clamp(300px, 30vw, 500px);
+  right: -500px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+#cart.visible{
+  right: 0;
+  opacity: 1;
+}

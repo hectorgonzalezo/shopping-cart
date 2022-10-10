@@ -35,4 +35,27 @@ describe('Header component', () => {
 
     expect(screen.getByRole('main').id).toBe('shop');
   });
+
+  it('shows and hides cart when pressing on buttons', () => {
+    render(<App />);
+    const cartButton = screen.getByRole('button', { name: 'Cart' });
+    const cart = screen.getByRole('complementary');
+    const closeCartButton = screen.getByRole('button', { name: 'x' });
+    const header = screen.getByRole('banner');
+
+    // Cart should start invisible
+    expect(cart).not.toHaveClass('visible');
+
+    // press link
+    userEvent.click(cartButton);
+    // Become visible after pressing button
+    expect(cart).toBeVisible();
+    expect(cart).toHaveClass('visible');
+    // Header and rest should become opaque
+    expect(header).toHaveClass('opaque');
+
+    // After clicking close button, make it invisible
+    userEvent.click(closeCartButton);
+    expect(cart).not.toHaveClass('visible');
+  });
 });

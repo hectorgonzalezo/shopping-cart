@@ -9,6 +9,11 @@
   width: 100vw;
 }
 
-* {
-  outline: 1px dashed red;
+.opaque{
+  opacity: 0.3;
+  transition: all 1s;
 }
+
+/* * {
+  outline: 1px dashed red;
+} */

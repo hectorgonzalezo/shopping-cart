@@ -1,11 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function Shop() {
+function Shop({ opaque }) {
   return (
-    <main id="shop">
+    <main id="shop" className={opaque ? 'opaque' : ''}>
       <h1>this is the shop</h1>
     </main>
   );
 }
+
+Shop.propTypes = {
+  opaque: PropTypes.bool.isRequired,
+};
 
 export default Shop;
