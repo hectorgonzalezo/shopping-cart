@@ -13,15 +13,17 @@ function ItemDisplay({ opaque }) {
   // Split description into paragraphs
   const descriptionParagraphs = description.split('\n');
   return (
-    <article className={`item-display ${opaque ? 'opaque' : ''}`}>
-      <img src={require(`../assets/products/${img}`)} />
-      <h1>{name}</h1>
-      {speed !== undefined ? <h2>{speed}</h2> : null}
-      {signal !== undefined ? <h2>{signal}</h2> : null}
-      {descriptionParagraphs.map((paragraph) => (
-        <p key={uniqid()} className="paragraph">{paragraph}</p>
-      ))}
-    </article>
+    <div className="display">
+      <article className={`item-display ${opaque ? 'opaque' : ''}`}>
+        <img src={require(`../assets/products/${img}`)} />
+        <h1>{name}</h1>
+        {speed !== undefined ? <h2>{speed}</h2> : null}
+        {signal !== undefined ? <h2>{signal}</h2> : null}
+        {descriptionParagraphs.map((paragraph) => (
+          <p key={uniqid()} className="paragraph">{paragraph}</p>
+        ))}
+      </article>
+    </div>
   );
 }
 
