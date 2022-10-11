@@ -25,19 +25,22 @@
   word-wrap: break-word;
 }
 
+.item {
+  width: 340px
+}
+
 *:link{
   text-decoration: none;
   color: inherit;
 }
 
 .item img {
-  max-height: 200px;
+  height: 100px;
 }
 
 .item h1 {
   font-size: 2rem;
 }
-
 
 .display{
   display: flex;
@@ -52,4 +55,16 @@
   height: auto;
   max-width: 500px;
   padding: 15px;
+}
+
+@media (max-width:  900px){
+  .item {
+    width: 450px
+  }
+  .item img{
+    height: 120px;
+  }
+  #items{
+    grid-template-columns: 1fr;
+  }
 }
