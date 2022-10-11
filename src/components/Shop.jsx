@@ -2,25 +2,54 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import uniqid from 'uniqid';
+import { lowerCase, capitalize } from 'lodash';
 import products from '../assets/products.json';
 import ShopItem from './ShopItem';
 import '../styles/shopStyle.css';
 
 function Shop({ opaque }) {
   const [items, setItems] = useState([]);
+  const [itemTypes, setItemTypes] = useState(['all']);
+  // This state is used by the filter
+  const [itemsDisplayed, setItemsDisplayed] = useState([]);
+
+  // Displays only the items depending on the button that called it
+  function filterItems(e) {
+    // When pressing the All button, display all the items
+    if (e.target.innerText === 'All') {
+      setItemsDisplayed(items);
+    } else {
+      const type = lowerCase(e.target.innerText);
+      setItemsDisplayed(items.filter((item) => item.type === type));
+    }
+  }
 
   useEffect(() => {
     // update items to be displayed by shop from json file only if items is empty
     if (items.length === 0) {
-      setItems(Object.values(products));
+      const productValues = Object.values(products);
+      setItems(productValues);
+      setItemsDisplayed(productValues);
+      // Add to types so that button can be rendered
+      const uniqueTypes = productValues.reduce(
+        (prev, curr) => prev.add(curr.type),
+        new Set()
+      );
+      setItemTypes(['all', ...uniqueTypes]);
     }
   }, []);
 
   return (
     <main id="shop" className={opaque ? 'opaque' : ''}>
       <h1>this is the shop</h1>
+      <div id="filters">
+        <h1>Filter by type</h1>
+        {itemTypes.map((type) => (
+          <button key={type} type="button" onClick={filterItems}>{capitalize(type)}</button>
+        ))}
+      </div>
       <div id="items">
-        {items.map((item) => (
+        {itemsDisplayed.map((item) => (
           // Wrap the item in a link so that it takes the user to the associated ItemDisplay
           <Link to={item.id} key={uniqid()}>
             <ShopItem
