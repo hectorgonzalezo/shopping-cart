@@ -11,9 +11,9 @@ function ItemDisplay({ opaque }) {
   // get relevant values
   const { img, name, speed, signal, description } = selectedProduct[0];
   // Split description into paragraphs
- const descriptionParagraphs = description.split('\n')
+  const descriptionParagraphs = description.split('\n');
   return (
-    <div className={`item-display ${opaque ? 'opaque' : ''}`}>
+    <article className={`item-display ${opaque ? 'opaque' : ''}`}>
       <img src={require(`../assets/products/${img}`)} />
       <h1>{name}</h1>
       {speed !== undefined ? <h2>{speed}</h2> : null}
@@ -21,7 +21,7 @@ function ItemDisplay({ opaque }) {
       {descriptionParagraphs.map((paragraph) => (
         <p key={uniqid()} className="paragraph">{paragraph}</p>
       ))}
-    </div>
+    </article>
   );
 }
 
