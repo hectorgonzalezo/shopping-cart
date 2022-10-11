@@ -58,4 +58,19 @@ describe('App', () => {
     userEvent.click(closeCartButton);
     expect(cart).not.toHaveClass('visible');
   });
+
+  // it('Cart can be updated by displayItems', () => {
+  //   render(<App />);
+  //   // go to shop
+  //   const shopLink = screen.getByText('Shop');
+  //   userEvent.click(shopLink);
+
+  //   // go to display
+  //   const itemLink = screen.getAllByRole('article');
+  //   userEvent.click(itemLink[0]);
+
+  //   //
+
+  //   screen.debug();
+  // });
 });

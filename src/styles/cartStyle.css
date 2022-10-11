@@ -1,14 +1,44 @@
 #cart {
   position: absolute;
-  background-color: red;
+  background-color: lightblue;
   height: 100vh;
   width: clamp(300px, 30vw, 500px);
   right: -500px;
   opacity: 0;
   transition: all 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#cart > button:first-child{
+  align-self: flex-start;
+  width: 20px;
 }
 
 #cart.visible{
   right: 0;
   opacity: 1;
 }
+
+#cart .item{
+  margin: 10px;
+  padding: 5px;
+  height: auto;
+  width: auto;
+}
+
+#cart img{
+  height: 60px;
+}
+
+#cart .item h1{
+  font-size: 1rem;
+}
+
+#cart .item .quantity{
+  align-self: flex-start;
+}
+
+

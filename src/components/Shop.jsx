@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import uniqid from 'uniqid';
-import { lowerCase, capitalize } from 'lodash';
+import { lowerCase } from 'lodash';
 import products from '../assets/products.json';
 import ShopItem from './ShopItem';
-import FilterButton from './FilterButton'
+import FilterButton from './FilterButton';
 import '../styles/shopStyle.css';
 
 function Shop({ opaque }) {
@@ -38,7 +38,7 @@ function Shop({ opaque }) {
       // Add to types so that button can be rendered
       const uniqueTypes = productValues.reduce(
         (prev, curr) => prev.add(curr.type),
-        new Set()
+        new Set(),
       );
       setItemTypes(['all', ...uniqueTypes]);
     }

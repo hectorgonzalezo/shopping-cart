@@ -46,10 +46,10 @@ function App() {
           <Route path="shop/:id" element={<ItemDisplay items={cartItems} opaque={cartVisible} addToCart={addToCart}/>} />
         </Routes>
       </BrowserRouter>
-      <Cart visible={cartVisible} hideCartFunc={toggleCart} />
+      <Cart items={cartItems} visible={cartVisible} hideCartFunc={toggleCart} />
       <Footer projectName="shopping-cart" opaque={cartVisible} />
     </div>
   );
 }
 
-export default App;
+export default App;``
