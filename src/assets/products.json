@@ -1,5 +1,6 @@
 {
 	"teensy2":{
+    "id": "1",
 		"type":"board",
 		"name": "Teensy 2.0",
 		"img": "teensy20.jpeg",
@@ -7,6 +8,7 @@
 		"signal": "5V signals"
 	},
 	"teensy+2":{
+    "id": "2",
 		"type":"board",
 		"name": "Teensy++ 2.0",
 		"img": "teensypp20.jpeg",
@@ -14,6 +16,7 @@
 		"signal": "5V signals"
 	},
 	"teensyLC":{
+    "id": "3",
 		"type":"board",
 		"name": "Teensy LC",
 		"img": "teensylc.jpeg",
@@ -21,6 +24,7 @@
 		"signal": "3.3V signals"
 	},
 	"teensy35":{
+    "id": "4",
 		"type":"board",
 		"name": "Teensy 3.5",
 		"img": "teensy35.jpeg",
@@ -28,6 +32,7 @@
 		"signal": "3.3V signals, 5V tolerant"
 	},
 	"teensy32":{
+    "id": "5",
 		"type":"board",
 		"name": "Teensy 3.2",
 		"img": "teensy32.jpeg",
@@ -35,6 +40,7 @@
 		"signal": "3.3V signals, 5V tolerant"
 	},
 	"teensy36":{
+    "id": "6",
 		"type":"board",
 		"name": "Teensy 3.6",
 		"img": "teensy36.jpeg",
@@ -42,6 +48,7 @@
 		"signal": "3.3V signals"
 	},
 	"teensy40":{
+    "id": "7",
 		"type":"board",
 		"name": "Teensy 4.0",
 		"img": "teensy40.jpeg",
@@ -49,6 +56,7 @@
 		"signal": "3.3V signals"
 	},
 	"teensy41":{
+    "id": "8",
 		"type":"board",
 		"name": "Teensy 4.1",
 		"img": "teensy41.jpeg",
@@ -56,6 +64,7 @@
 		"signal": "3.3V signals"
 	},
 	"touchScreen":{
+    "id": "9",
 		"type":"component",
 		"name": "Color Touchscreen",
 		"img": "touch-display.jpeg",
@@ -63,21 +72,25 @@
 		"size": "2.8 inch"
 	},
 	"ocoto28Adaptor":{
+    "id": "10",
 		"type":"adaptor",
 		"name": "OctoWS2811 Adaptor",
 		"img": "octo28_adaptor_1.jpeg"
 	},
 	"audioAdaptor":{
+    "id": "11",
 		"type":"adaptor",
 		"name": "Audio adaptor",
 		"img": "teensy3_audio.jpeg"
 	},
 	"sdAdaptor":{
+    "id": "12",
 		"type":"adaptor",
 		"name": "SD Adaptor",
 		"img": "sd_adaptor.jpeg"
 	},
 	"tutorialKit":{
+    "id": "13",
 		"type":"kit",
 		"name": "Kit for Teenseduino Tutorials",
 		"img": "tutorial_kit.jpeg"

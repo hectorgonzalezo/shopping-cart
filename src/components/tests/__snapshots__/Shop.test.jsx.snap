@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header component Renders correctly 1`] = `undefined`;
+exports[`Shop component Clicking on a ShopItem takes you to that item display 1`] = `undefined`;
+
+exports[`Shop component Renders correctly 1`] = `undefined`;

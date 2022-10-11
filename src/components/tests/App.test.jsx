@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
 import App from '../../App';
 
-describe('Header component', () => {
+describe('App', () => {
   it('Renders correctly', () => {
     render(<App />);
 

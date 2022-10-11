@@ -21,10 +21,10 @@
   border-radius: 1rem;
 }
 
-.item > img {
+.item img {
   max-height: 200px;
 }
 
-.item > h1 {
+.item h1 {
   font-size: 2rem;
 }

@@ -8,11 +8,11 @@
   min-height: 100vh;
   height: 100%;
   width: 100vw;
+  transition: opacity 1s;
 }
 
 .opaque{
   opacity: 0.3;
-  transition: all 1s;
 }
 
 /* * {

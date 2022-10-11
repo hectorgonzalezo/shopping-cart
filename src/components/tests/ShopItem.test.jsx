@@ -13,4 +13,22 @@ describe('Shop items', () => {
 
     expect(screen.container).toMatchSnapshot();
   });
+
+  it('Displays speed and signal if provided', () => {
+    render(<ShopItem name="Car" speed="300mph" signal="5v" />);
+
+    expect(screen.getByRole('heading', { name: '300mph' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: '5v' })).toBeInTheDocument();
+
+    expect(screen.container).toMatchSnapshot();
+  });
+
+  it('Doesnt add headdings if speed and signal not provided', () => {
+    render(<ShopItem name="Car" />);
+
+    // There should only be one heading
+    expect(screen.getAllByRole('heading').length).toBe(1);
+
+    expect(screen.container).toMatchSnapshot();
+  });
 });

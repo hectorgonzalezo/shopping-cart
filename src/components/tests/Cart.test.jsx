@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
 import Cart from '../Cart';
 
-describe('Header component', () => {
+describe('Cart component', () => {
   it('close button correctly calls function', () => {
     const mockHide = jest.fn();
     render(<Cart hideCartFunc={mockHide} />);

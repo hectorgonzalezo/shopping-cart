@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import uniqid from 'uniqid';
 import products from '../assets/products.json';
@@ -20,7 +21,16 @@ function Shop({ opaque }) {
       <h1>this is the shop</h1>
       <div id="items">
         {items.map((item) => (
-          <ShopItem key={uniqid()} name={item.name} img={item.img} />
+          // Wrap the item in a link so that it takes the user to the associated ItemDisplay
+          <Link to={item.id} key={uniqid()}>
+            <ShopItem
+              id={item.id}
+              name={item.name}
+              img={item.img}
+              speed={item.speed}
+              signal={item.signal}
+            />
+          </Link>
         ))}
       </div>
     </main>

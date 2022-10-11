@@ -1,3 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Shop items Displays speed and signal if provided 1`] = `undefined`;
+
+exports[`Shop items Doesnt add headdings if speed and signal not provided 1`] = `undefined`;
+
 exports[`Shop items Renders correctly 1`] = `undefined`;

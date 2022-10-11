@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Shop from './components/Shop';
 import Cart from './components/Cart';
+import ItemDisplay from './components/ItemDisplay';
 import './styles/appStyle.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home opaque={cartVisible} />} />
           <Route path="shop" element={<Shop opaque={cartVisible} />} />
+          <Route path="shop/:id" element={<ItemDisplay opaque={cartVisible} />} />
         </Routes>
       </BrowserRouter>
       <Cart visible={cartVisible} hideCartFunc={toggleCart} />
