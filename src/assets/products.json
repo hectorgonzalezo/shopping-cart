@@ -5,7 +5,8 @@
 		"name": "Teensy 2.0",
 		"img": "teensy20.jpeg",
 		"speed": "16 MHz AVR",
-		"signal": "5V signals"
+		"signal": "5V signals",
+    "description": "The Teensy USB Development Board is a complete USB-based microcontoller development system. Only a standard Mini-B USB cable (sold separately) is needed to connect to a PC or Macintosh.\nThis version has solder pads for all I/O signals. The Teensy is also available with the header pins to plug directly into a solderless breadboard.\nAll Teensy boards are shipped assembled and fully tested.\nTeensy 2.0 has a total of 25 input/output signal pins. 22 are easily accessible when used with a solderless breadboard."
 	},
 	"teensy+2":{
     "id": "2",
@@ -13,7 +14,8 @@
 		"name": "Teensy++ 2.0",
 		"img": "teensypp20.jpeg",
 		"speed": "16 MHz AVR",
-		"signal": "5V signals"
+		"signal": "5V signals",
+    "description": "The Teensy USB Development Board is a complete USB-based microcontoller development system. Only a standard Mini-B USB cable (sold separately) is needed to connect to a PC or Macintosh.\nThis version has solder pads for all I/O signals. The Teensy is also available with the header pins to plug directly into a solderless breadboard.\nAll Teensy boards are shipped assembled and fully tested.\nTeensy++ 2.0 has a total of 44 input/output signal pins. 36 are easily accessible when used with a solderless breadboard."
 	},
 	"teensyLC":{
     "id": "3",
@@ -21,7 +23,8 @@
 		"name": "Teensy LC",
 		"img": "teensylc.jpeg",
 		"speed": "48 MHz Cortex-M0+",
-		"signal": "3.3V signals"
+		"signal": "3.3V signals",
+    "description": "ARM Cortex-M0+ at 48 MHz\n62K Flash, 8K RAM, 128 bytes EEPROM (emulated)\nUSB device 12 Mbit/sec\n27 digital input/output pins, 10 PWM output pins\n13 analog input pins, 1 analog output pin, 11 capacitive sense pins\n3 serial, 1 SPI, 2 I2C ports\n4 simple DMA channels"
 	},
 	"teensy35":{
     "id": "4",
@@ -29,7 +32,8 @@
 		"name": "Teensy 3.5",
 		"img": "teensy35.jpeg",
 		"speed": "120 MHz Cortex-M4F",
-		"signal": "3.3V signals, 5V tolerant"
+		"signal": "3.3V signals, 5V tolerant",
+    "description": "ARM Cortex-M4 at 120 MHz\nFloat point math unit, 32 bits only\n512K Flash, 256K RAM, 4K EEPROM\nUSB device 12 Mbit/sec\n64 digital input/output pins, 20 PWM output pins\n27 analog input pins, 2 analog output pins\n6 serial, 3 SPI, 3 I2C ports\n1 I2S/TDM digital audio port\n1 CAN bus\n1 SDIO (4 bit) native SD Card port\n16 general purpose DMA channels\nCryptographic Acceleration & Random Number Generator\nRTC for date/time"
 	},
 	"teensy32":{
     "id": "5",
@@ -37,7 +41,8 @@
 		"name": "Teensy 3.2",
 		"img": "teensy32.jpeg",
 		"speed": "72 MHz Cortex-M4",
-		"signal": "3.3V signals, 5V tolerant"
+		"signal": "3.3V signals, 5V tolerant",
+    "description": "ARM Cortex-M4 at 72 MHz\n256K Flash, 64K RAM, 2K EEPROM\nUSB device 12 Mbit/sec\n34 digital input/output pins, 12 PWM output pins\n21 analog input pins, 1 analog output pin, 12 capacitive sense pins\n3 serial, 1 SPI, 2 I2C ports\n1 I2S/TDM digital audio port\n1 CAN bus\n16 general purpose DMA channels\nRTC for date/time"
 	},
 	"teensy36":{
     "id": "6",
@@ -45,7 +50,8 @@
 		"name": "Teensy 3.6",
 		"img": "teensy36.jpeg",
 		"speed": "180 MHz Cortex-M4F",
-		"signal": "3.3V signals"
+		"signal": "3.3V signals",
+    "description": "ARM Cortex-M4 at 180 MHz\nFloat point math unit, 32 bits only\n1024 Flash, 256K RAM, 4K EEPROM\nUSB device 12 Mbit/sec, USB host 480 Mbit/sec\n64 digital input/output pins, 22 PWM output pins\n25 analog input pins, 2 analog output pins, 11 capacitive sense pins\n6 serial, 3 SPI, 4 I2C ports\n1 I2S/TDM digital audio port\n2 CAN bus\n1 SDIO (4 bit) native SD Card port\n32 general purpose DMA channels\nCryptographic Acceleration & Random Number Generator\nRTC for date/time"
 	},
 	"teensy40":{
     "id": "7",
@@ -53,7 +59,8 @@
 		"name": "Teensy 4.0",
 		"img": "teensy40.jpeg",
 		"speed": "600 MHz Cortex-M7",
-		"signal": "3.3V signals"
+		"signal": "3.3V signals",
+    "description": "ARM Cortex-M7 at 600 MHz\nFloat point math unit, 64 & 32 bits\n1984K Flash, 1024K RAM (512K tightly coupled), 1K EEPROM (emulated)\nUSB device 480 Mbit/sec & USB host 480 Mbit/sec\n40 digital input/output pins, 31 PWM output pins\n14 analog input pins\n7 serial, 3 SPI, 3 I2C ports\n2 I2S/TDM and 1 S/PDIF digital audio port\n3 CAN Bus (1 with CAN FD)\n32 general purpose DMA channels\nCryptographic Acceleration & Random Number Generator\nRTC for date/time\nProgrammable FlexIO\nPixel Processing Pipeline\nPeripheral cross triggering\nPower On/Off management"
 	},
 	"teensy41":{
     "id": "8",
@@ -61,7 +68,8 @@
 		"name": "Teensy 4.1",
 		"img": "teensy41.jpeg",
 		"speed": "600 MHz Cortex-M7",
-		"signal": "3.3V signals"
+		"signal": "3.3V signals",
+    "description": "ARM Cortex-M7 at 600 MHz\nFloat point math unit, 64 & 32 bits\n7936K Flash, 1024K RAM (512K tightly coupled), 4K EEPROM (emulated)\nQSPI memory expansion, locations for 2 extra RAM or Flash chips\nUSB device 480 Mbit/sec & USB host 480 Mbit/sec\n55 digital input/output pins, 35 PWM output pins\n18 analog input pins\n8 serial, 3 SPI, 3 I2C ports\n2 I2S/TDM and 1 S/PDIF digital audio port\n3 CAN Bus (1 with CAN FD)\n1 SDIO (4 bit) native SD Card port\nEthernet 10/100 Mbit with DP83825 PHY\n32 general purpose DMA channels\nCryptographic Acceleration & Random Number Generator\nRTC for date/time\nProgrammable FlexIO\nPixel Processing Pipeline\nPeripheral cross triggering\nPower On/Off management"
 	},
 	"touchScreen":{
     "id": "9",
@@ -69,30 +77,35 @@
 		"name": "Color Touchscreen",
 		"img": "touch-display.jpeg",
 		"resolution": "320X240",
-		"size": "2.8 inch"
+		"size": "2.8 inch",
+    "description": "This 320x240 color TFT display is recommended for use with Teensy 3.2 to Teensy 4.1, for high resolution color graphics.\nIt can be used with the Adafruit_ILI9341 library or Optimized ILI9341 library.\nILI9341_t3 supports large high-res fonts. A library of additional fonts is available, as well as huge collection of Google fonts, and even more fonts here. There's also an alternate https://forum.pjrc.com/threads/39804-ILI9341-font-builder, in addition to ttf_to_ili9341.pl.\nTwo alternate optimized libraries are available, from Frank B and KurtE.\nThe XPT2046 touch controller can be read with this XPT2046_Touchscreen library."
 	},
 	"ocoto28Adaptor":{
     "id": "10",
 		"type":"adaptor",
 		"name": "OctoWS2811 Adaptor",
-		"img": "octo28_adaptor_1.jpeg"
+		"img": "octo28_adaptor_1.jpeg",
+    "description": "This adaptor board connects Teensy 3.2 - Teensy 4.1 to thousands of LEDs using the OctoWS2811 Library.\nThe adaptor features a 74HCT245 buffer chip and 100 ohm impedance matching resistors. CAT6 Ethernet cable is used from this board to the LED strips. CAT6 cable is designed for very high bandwidth, minimal cross-talk between twisted pairs, and 100 ohm impedance, for a very high quality signal. The RJ-45 network jacks allow your LED array to be easily disconnected from the electronics.\nFour self-threading screws are supplied with the OctoWS2811 Adaptor board.\nTeensy 3.x is added on top of the adaptor using stacking header pins, or a header and socket pair if you wish to be able to remove the Teensy 3.x board."
 	},
 	"audioAdaptor":{
     "id": "11",
 		"type":"adaptor",
 		"name": "Audio adaptor",
-		"img": "teensy3_audio.jpeg"
+		"img": "teensy3_audio.jpeg",
+    "description": "This audio adaptor lets you easily add high quality 16 bit, 44.1 kHz sample rate (CD quality) audio to your projects with Teensy 3.0, 3.1, 3.2, 3.5, 3.6 (Rev C), or 4.0 (Rev D). The older versions can be used with Teensy 4.0 by wires or an adaptor PCB.\nAll versions of the audio shield support stereo headphone and stereo line-level output, and also stereo line-level input or mono microphone input.\nThe Teensy Audio Library lets you use the input and output simultaneously together with a toolkit of audio processing objects, to easily create all types of sophisticated audio applications. You can play multiple sound files, create synthesized waveforms, apply effects, mix multiple streams and output high quality audio to the headphones or line out pins.\nTeensy 3.x have the Cortex-M4 DSP instructions which provide plenty of computational power for real-time FFT (spectrum analysis), opening up the possibility of creating advanced sound-reactive projects."
 	},
 	"sdAdaptor":{
     "id": "12",
 		"type":"adaptor",
 		"name": "SD Adaptor",
-		"img": "sd_adaptor.jpeg"
+		"img": "sd_adaptor.jpeg",
+    "description": "This adaptor allows you to easily use gigabytes of SD card flash memory and/or a Wiznet WIZ850io or WIZ820io ethernet module with Teensy LC, 3.0, 3.1, 3.2, 3.5 and 3.6."
 	},
 	"tutorialKit":{
     "id": "13",
 		"type":"kit",
 		"name": "Kit for Teenseduino Tutorials",
-		"img": "tutorial_kit.jpeg"
+		"img": "tutorial_kit.jpeg",
+    "description": "Components needed for the Teensyduino Tutorials, 1 through 4.\nAlso required: Teensy, Breadboard, USB Cable, and a PC or Macintosh computer."
 	}
 }

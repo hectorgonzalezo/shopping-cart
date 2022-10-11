@@ -28,7 +28,6 @@ describe('Shop component', () => {
       </MemoryRouter>
     );
 
-
     const aHeading = screen.getByRole('link', { name: 'Teensy 2.0 16 MHz AVR 5V signals' });
     expect(aHeading.href).toBe('http://localhost/1');
     expect(screen.container).toMatchSnapshot();
