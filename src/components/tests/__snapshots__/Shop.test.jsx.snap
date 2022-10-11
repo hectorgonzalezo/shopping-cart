@@ -2,4 +2,8 @@
 
 exports[`Shop component Clicking on a ShopItem takes you to that item display 1`] = `undefined`;
 
+exports[`Shop component Filtering by all keeps every item in screen 1`] = `undefined`;
+
 exports[`Shop component Renders correctly 1`] = `undefined`;
+
+exports[`Shop component The other filters reduce the number of elements 1`] = `undefined`;

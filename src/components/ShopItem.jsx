@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 function ShopItem({ name, img, speed, signal }) {
   return (
-    <div className="item">
+    <article className="item">
       <img src={require(`../assets/products/${img}`)} />
       <h1>{name}</h1>
       {speed !== '' ? <h2>{speed}</h2> : null}
       {signal !== '' ? <h2>{signal}</h2> : null}
-    </div>
+    </article>
   );
 }
 

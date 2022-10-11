@@ -5,22 +5,27 @@ import uniqid from 'uniqid';
 import { lowerCase, capitalize } from 'lodash';
 import products from '../assets/products.json';
 import ShopItem from './ShopItem';
+import FilterButton from './FilterButton'
 import '../styles/shopStyle.css';
 
 function Shop({ opaque }) {
   const [items, setItems] = useState([]);
   const [itemTypes, setItemTypes] = useState(['all']);
+  const [currentFilter, setCurrentFilter] = useState('All');
   // This state is used by the filter
   const [itemsDisplayed, setItemsDisplayed] = useState([]);
 
   // Displays only the items depending on the button that called it
-  function filterItems(e) {
+  function filterItems(buttonName) {
+    if (buttonName !== currentFilter) {
     // When pressing the All button, display all the items
-    if (e.target.innerText === 'All') {
-      setItemsDisplayed(items);
-    } else {
-      const type = lowerCase(e.target.innerText);
-      setItemsDisplayed(items.filter((item) => item.type === type));
+      if (buttonName === 'all') {
+        setItemsDisplayed(items);
+      } else {
+        const type = lowerCase(buttonName);
+        setItemsDisplayed(items.filter((item) => item.type === type));
+      }
+      setCurrentFilter(buttonName);
     }
   }
 
@@ -45,7 +50,7 @@ function Shop({ opaque }) {
       <div id="filters">
         <h1>Filter by type</h1>
         {itemTypes.map((type) => (
-          <button key={type} type="button" onClick={filterItems}>{capitalize(type)}</button>
+          <FilterButton key={uniqid()} type={type} onClick={filterItems} />
         ))}
       </div>
       <div id="items">
