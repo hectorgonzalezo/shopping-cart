@@ -1,7 +1,7 @@
 import React from 'react';
-import { getByTestId, render, screen } from '@testing-library/react';
-import { MemoryRouter, Route, Routes } from 'react-router-dom';
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import userEvent from '@testing-library/user-event';
 import ItemDisplay from '../ItemDisplay';
 
 // mock function used to mimick id parameter
@@ -15,11 +15,44 @@ jest.mock('react-router-dom', () => ({
 
 describe('Item Display component', () => {
   it('Renders correctly', () => {
-    render(<ItemDisplay />);
+    const mockFunc = jest.fn();
+    render(<ItemDisplay addToCart={mockFunc} />);
 
     const itemDisplayed = screen.getByRole('article');
 
     expect(itemDisplayed).toBeInTheDocument();
     expect(screen.container).toMatchSnapshot();
+  });
+
+  it('Calls add to cart', () => {
+    const mockFunc = jest.fn((e) => e.preventDefault());
+    render(<ItemDisplay addToCart={mockFunc} />);
+
+    const addButton = screen.getByRole('button');
+
+    userEvent.click(addButton);
+
+    expect(mockFunc).toBeCalled();
+  });
+
+  it('Starts number of items at 1', () => {
+    const mockFunc = jest.fn((e) => e.preventDefault());
+    render(<ItemDisplay addToCart={mockFunc} />);
+
+    const numItemsInput = screen.getByRole('spinbutton');
+
+    expect(numItemsInput).toBeInTheDocument();
+    expect(numItemsInput).toHaveValue(1);
+  });
+
+  it('Writing a different value updates it', () => {
+    const mockFunc = jest.fn((e) => e.preventDefault());
+    render(<ItemDisplay addToCart={mockFunc} />);
+
+    const numItemsInput = screen.getByRole('spinbutton');
+
+    userEvent.type(numItemsInput, '{backspace}3');
+
+    expect(numItemsInput).toHaveValue(3);
   });
 });
