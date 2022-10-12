@@ -38,7 +38,7 @@ describe('App', () => {
 
   it('shows and hides cart when pressing on buttons', () => {
     render(<App />);
-    const cartButton = screen.getByRole('button', { name: '' });
+    const cartButton = screen.getByRole('button', { name: 'cart.svg' });
     const cart = screen.getByRole('complementary');
     const closeCartButton = screen.getByRole('button', { name: 'x' });
     const header = screen.getByRole('banner');
@@ -58,19 +58,4 @@ describe('App', () => {
     userEvent.click(closeCartButton);
     expect(cart).not.toHaveClass('visible');
   });
-
-  // it('Cart can be updated by displayItems', () => {
-  //   render(<App />);
-  //   // go to shop
-  //   const shopLink = screen.getByText('Shop');
-  //   userEvent.click(shopLink);
-
-  //   // go to display
-  //   const itemLink = screen.getAllByRole('article');
-  //   userEvent.click(itemLink[0]);
-
-  //   //
-
-  //   screen.debug();
-  // });
 });

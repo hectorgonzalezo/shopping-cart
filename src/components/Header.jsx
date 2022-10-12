@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/headerStyle.css';
 import PropTypes from 'prop-types';
-import cart from '../assets/cart.png';
+import { ReactComponent as Cart } from '../assets/cart.svg';
 import Button from './Button';
 
 function Header({ showCartFunc, opaque }) {
@@ -11,13 +11,17 @@ function Header({ showCartFunc, opaque }) {
       <h1>This is the header</h1>
       <ul>
         <li>
-          <Link to="/"><Button name="Home" /></Link>
+          <Link to="/">
+            <Button name="Home" />
+          </Link>
         </li>
         <li>
-          <Link to="/shop"><Button name="shop" /></Link>
+          <Link to="/shop">
+            <Button name="Shop" />
+          </Link>
         </li>
         <li>
-          <Button img={cart} onClick={showCartFunc} />
+          <Button name="" img={<Cart />} onClick={showCartFunc} />
         </li>
       </ul>
     </header>
