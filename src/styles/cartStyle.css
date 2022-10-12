@@ -1,6 +1,6 @@
 #cart {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: clamp(300px, 30vw, 500px);
   right: -500px;
   opacity: 0;
@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  background-color: var(--papaya-whip);
+  background-color: var(--fawn);
   z-index: 1;
 }
 

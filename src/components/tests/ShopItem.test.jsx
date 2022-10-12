@@ -31,4 +31,17 @@ describe('Shop items', () => {
 
     expect(screen.container).toMatchSnapshot();
   });
+
+  it('Changing quantity calls addtoCart', () => {
+    const mockAddToCart = jest.fn();
+    render(<ShopItem name="mock" quantity="1" addToCart={mockAddToCart} />);
+
+    const numItemsInput = screen.getByRole('spinbutton');
+
+    expect(numItemsInput).toHaveValue(1);
+
+    userEvent.type(numItemsInput, '{backspace}3');
+
+    expect(mockAddToCart).toBeCalled();
+  });
 });
