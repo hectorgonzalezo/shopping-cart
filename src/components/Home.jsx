@@ -9,12 +9,10 @@ import polySynth from '../assets/examples/polysynth.jpeg';
 import spider from '../assets/examples/spider.jpg';
 import tic from '../assets/examples/tic-tac-toe.jpg';
 import aiee from '../assets/examples/aiee.jpg';
-import Button from './Button';
 
 const HomeContainer = styled.main`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 2fr;
   padding: 20px;
   align-items:  center;
   justify-items: center;
@@ -22,19 +20,14 @@ const HomeContainer = styled.main`
 
   h1{
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: var(--dark-spring-bud);
   }
 
-  button{
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
 
   div{
     grid-column: 2 / -1;
-    grid-row: 1 / -1;
 
     img{
       width: 100%;
@@ -49,7 +42,6 @@ function Home({ opaque }) {
   return (
     <HomeContainer id="home" className={opaque ? 'opaque' : ''}>
       <h1>Development Boards and more</h1>
-      <Button name="SHOP NOW" />
       <Carousel
         sx={{ maxWidth: 600 }}
         align="center"

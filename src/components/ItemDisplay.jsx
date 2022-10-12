@@ -25,7 +25,7 @@ function ItemDisplay({ items, opaque, addToCart }) {
       const quantity = items.filter((item) => item.name === name);
       setProductQuantity(quantity[0].quantity);
     }
-  }, [items])
+  }, [items]);
 
   // Updates productQuantity
   function updateQuantity(e) {
@@ -33,8 +33,8 @@ function ItemDisplay({ items, opaque, addToCart }) {
   }
 
   return (
-    <div className="display">
-      <article className={`item-display ${opaque ? 'opaque' : ''}`}>
+    <main className={`display ${opaque ? 'opaque' : ''}`}>
+      <article className="item-display">
         <img src={require(`../assets/products/${img}`)} alt="product" />
         <h1>{name}</h1>
         {speed !== undefined ? <h2>{speed}</h2> : null}
@@ -51,22 +51,25 @@ function ItemDisplay({ items, opaque, addToCart }) {
             onChange={updateQuantity}
             min="1"
           />
-          <button type="submit" data={name} onClick={addToCart}>Add to cart</button>
+          <button type="submit" data={name} onClick={addToCart}>
+            Add to cart
+          </button>
         </form>
       </article>
-    </div>
+    </main>
   );
 }
 
 ItemDisplay.defaultProps = {
   opaque: false,
   items: [],
+  addToCart: () => {},
 };
 
 ItemDisplay.propTypes = {
   items: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)),
   opaque: PropTypes.bool,
-  addToCart: PropTypes.func.isRequired,
+  addToCart: PropTypes.func,
 };
 
 export default ItemDisplay;

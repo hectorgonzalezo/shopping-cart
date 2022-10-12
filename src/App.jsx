@@ -24,7 +24,8 @@ function App() {
   function addToCart(e) {
     e.preventDefault();
     const name = e.target.getAttribute('data');
-    const quantity = e.target.previousElementSibling.value;
+    // the first one is used by cart and the second by the shop
+    const quantity = e.target.value || e.target.previousElementSibling.value;
 
     // If the items is already in card, add the quantity.
     if (isItemInCart(name)) {
@@ -46,7 +47,7 @@ function App() {
           <Route path="shop/:id" element={<ItemDisplay items={cartItems} opaque={cartVisible} addToCart={addToCart}/>} />
         </Routes>
       </BrowserRouter>
-      <Cart items={cartItems} visible={cartVisible} hideCartFunc={toggleCart} />
+      <Cart items={cartItems} visible={cartVisible} hideCartFunc={toggleCart} addToCart={addToCart} />
       <Footer projectName="shopping-cart" opaque={cartVisible} />
     </div>
   );

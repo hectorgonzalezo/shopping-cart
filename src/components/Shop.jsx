@@ -46,7 +46,6 @@ function Shop({ opaque }) {
 
   return (
     <main id="shop" className={opaque ? 'opaque' : ''}>
-      <h1>this is the shop</h1>
       <div id="filters">
         <h1>Filter by type</h1>
         {itemTypes.map((type) => (

@@ -3,7 +3,7 @@
 
 :root {
   /* CSS HEX */
-  --dark-spring-bud:rgb(133, 141, 106); 
+  --dark-spring-bud:rgb(100, 106, 80); 
   --pale-spring-bud: #ccd5aeff;
   --pale-spring-bud-2: #e9edc9ff;
   --cornsilk: #fefae0ff;
@@ -34,6 +34,7 @@
 
 main{
   background: var(--gradient-top);
+  /* background-color: var(--papaya-whip); */
 }
 
 header,

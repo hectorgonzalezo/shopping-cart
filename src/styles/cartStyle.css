@@ -1,6 +1,5 @@
 #cart {
   position: absolute;
-  background-color: lightblue;
   height: 100vh;
   width: clamp(300px, 30vw, 500px);
   right: -500px;
@@ -10,6 +9,8 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  background-color: var(--papaya-whip);
+  z-index: 1;
 }
 
 #cart > button:first-child{
@@ -20,14 +21,17 @@
 #cart.visible{
   right: 0;
   opacity: 1;
-  background-color: var(--fawn);
 }
 
 #cart .item{
   margin: 10px;
-  padding: 5px;
+  padding: 10px;
   height: auto;
   width: auto;
+}
+
+#cart .item input{
+  width: 40px
 }
 
 #cart img{
