@@ -14,4 +14,4 @@ Shopping cart App built using React, made as practice of using reac-router-dom a
 ## Acknowledgements
 
 - Favicon by [icons8](https://icons8.com/).
-
+- Examples of teensy projects from [https://www.makeuseof.com/tag/cool-teensy-projects/](https://www.makeuseof.com/tag/cool-teensy-projects/)

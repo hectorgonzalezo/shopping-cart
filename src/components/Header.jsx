@@ -8,7 +8,7 @@ import Button from './Button';
 function Header({ showCartFunc, opaque }) {
   return (
     <header className={opaque ? 'opaque' : ''}>
-      <h1>This is the header</h1>
+      <h1>Teensy Products</h1>
       <ul>
         <li>
           <Link to="/">
