@@ -3,21 +3,24 @@ import '../styles/cartStyle.css';
 import PropTypes from 'prop-types';
 import ShopItem from './ShopItem';
 import products from '../assets/products.json';
+import Button from './Button';
 
 function Cart({ items, visible, hideCartFunc }) {
   const productObjects = Object.values(products);
   return (
     <aside id="cart" className={visible ? 'visible' : ''}>
-      <button type="button" onClick={hideCartFunc}>x</button>
+      <Button name="x" onClick={hideCartFunc} />
       {items.map((item) => {
-        const imgUrl = productObjects.find((product) => product.name === item.name).img;
+        const imgUrl = productObjects.find(
+          (product) => product.name === item.name
+        ).img;
         return (
-        <div key={item.name}>
-          <ShopItem quantity={item.quantity} name={item.name} img={imgUrl} />
-        </div>
-        )
+          <div key={item.name}>
+            <ShopItem quantity={item.quantity} name={item.name} img={imgUrl} />
+          </div>
+        );
       })}
-      <button>Buy</button>
+      <Button name="Buy" />
     </aside>
   );
 }

@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/headerStyle.css';
 import PropTypes from 'prop-types';
+import cart from '../assets/cart.png';
+import Button from './Button';
 
 function Header({ showCartFunc, opaque }) {
   return (
@@ -9,13 +11,13 @@ function Header({ showCartFunc, opaque }) {
       <h1>This is the header</h1>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/"><Button name="Home" /></Link>
         </li>
         <li>
-          <Link to="/shop">Shop</Link>
+          <Link to="/shop"><Button name="shop" /></Link>
         </li>
         <li>
-          <button type="button" onClick={showCartFunc}>Cart</button>
+          <Button img={cart} onClick={showCartFunc} />
         </li>
       </ul>
     </header>

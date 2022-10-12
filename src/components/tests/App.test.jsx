@@ -38,7 +38,7 @@ describe('App', () => {
 
   it('shows and hides cart when pressing on buttons', () => {
     render(<App />);
-    const cartButton = screen.getByRole('button', { name: 'Cart' });
+    const cartButton = screen.getByRole('button', { name: '' });
     const cart = screen.getByRole('complementary');
     const closeCartButton = screen.getByRole('button', { name: 'x' });
     const header = screen.getByRole('banner');

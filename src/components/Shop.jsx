@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import uniqid from 'uniqid';
-import { lowerCase } from 'lodash';
+import { capitalize, lowerCase } from 'lodash';
 import products from '../assets/products.json';
 import ShopItem from './ShopItem';
-import FilterButton from './FilterButton';
+import Button from './Button';
 import '../styles/shopStyle.css';
 
 function Shop({ opaque }) {
@@ -50,7 +50,7 @@ function Shop({ opaque }) {
       <div id="filters">
         <h1>Filter by type</h1>
         {itemTypes.map((type) => (
-          <FilterButton key={uniqid()} type={type} onClick={filterItems} />
+          <Button key={type} name={capitalize(type)} onClick={() => filterItems(type)} />
         ))}
       </div>
       <div id="items">

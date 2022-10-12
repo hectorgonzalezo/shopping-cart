@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import githubLogo from '../assets/github-logo.png';
-// import '../styles/footerStyle.css';
 
 const StyledFooter = styled.footer`
 margin-top: auto;
