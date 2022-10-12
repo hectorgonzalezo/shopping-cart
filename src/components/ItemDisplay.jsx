@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import uniqid from 'uniqid';
 import products from '../assets/products.json';
+import Button from './Button';
 
 function ItemDisplay({ items, opaque, addToCart }) {
   const { id } = useParams();
@@ -51,9 +52,7 @@ function ItemDisplay({ items, opaque, addToCart }) {
             onChange={updateQuantity}
             min="1"
           />
-          <button type="submit" data={name} onClick={addToCart}>
-            Add to cart
-          </button>
+          <Button name="Add to cart" data={name} onClick={addToCart} small />
         </form>
       </article>
     </main>

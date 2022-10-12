@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string, func, element } from 'prop-types';
+import { string, func, element, bool } from 'prop-types';
 
 const StyledButton = styled.button`
   border:  none;
-  font-size: 2rem;
+  font-size: ${(props) => props.small ? "1.5rem" : "2rem"};
   background-color: inherit;
-  color: white;
+  color: ${(props) => props.small ? "var(--fawn)" : "White"};
   text-shadow:  1px 1px 2px black;
 
   svg{
@@ -31,9 +31,9 @@ const StyledButton = styled.button`
   }
 `;
 
-function Button({ img, name, onClick }) {
+function Button({ img, name, onClick, data, small }) {
   return (
-    <StyledButton onClick={onClick}>
+    <StyledButton onClick={onClick} data={data} small={small}>
       {name}
       {img}
     </StyledButton>
@@ -44,12 +44,16 @@ Button.defaultProps = {
   name: '',
   img: <> </>,
   onClick: (name) => name,
+  data: '',
+  small: false,
 };
 
 Button.propTypes = {
   name: string,
   img: element,
   onClick: func,
+  data: string,
+  small: bool,
 };
 
 export default Button;
