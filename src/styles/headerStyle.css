@@ -1,6 +1,7 @@
 .App header{
   display: flex;
   align-items: center;
+  background-color: var(--fawn);
 }
 
 header h1{

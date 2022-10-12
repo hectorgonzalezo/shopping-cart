@@ -20,6 +20,7 @@
 #cart.visible{
   right: 0;
   opacity: 1;
+  background-color: var(--cornsilk);
 }
 
 #cart .item{
