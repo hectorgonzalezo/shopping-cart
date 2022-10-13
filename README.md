@@ -1,5 +1,4 @@
-
-# Memory Card Game
+# Shopping Cart App
 
 by Héctor Gonzalez Orozco
 
