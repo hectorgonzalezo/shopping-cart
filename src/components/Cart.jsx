@@ -5,7 +5,7 @@ import ShopItem from './ShopItem';
 import products from '../assets/products.json';
 import Button from './Button';
 
-function Cart({ items, visible, hideCartFunc, addToCart }) {
+function Cart({ items, visible, hideCartFunc, addToCart, removeFromCart }) {
   const productObjects = Object.values(products);
   return (
     <aside id="cart" className={visible ? 'visible' : ''}>
@@ -18,6 +18,7 @@ function Cart({ items, visible, hideCartFunc, addToCart }) {
           <div key={item.name}>
             <ShopItem
               addToCart={addToCart}
+              removeFromCart={removeFromCart}
               quantity={item.quantity}
               name={item.name}
               img={imgUrl}
@@ -34,6 +35,7 @@ Cart.defaultProps = {
   items: [],
   visible: false,
   addToCart: () => {},
+  removeFromCart: () => {},
 };
 
 Cart.propTypes = {
@@ -41,6 +43,7 @@ Cart.propTypes = {
   visible: PropTypes.bool,
   hideCartFunc: PropTypes.func.isRequired,
   addToCart: PropTypes.func,
+  removeFromCart: PropTypes.func,
 };
 
 export default Cart;

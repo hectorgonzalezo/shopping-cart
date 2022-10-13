@@ -59,11 +59,18 @@ function App() {
   // This function is used by Cart
   function updateQuantity(e) {
     const name = e.target.getAttribute('data');
-    const quantity = Number(e.target.value) > 0 ? e.target.value : ''; 
+    const quantity = Number(e.target.value) > 0 ? e.target.value : '';
     if (quantity === '' || Number(quantity) > 0) {
       const itemsMinusChosen = cartItems.filter((item) => item.name !== name);
       setCartItems([...itemsMinusChosen, { name, quantity }]);
     }
+  }
+
+  // Removes and item from cart, used by Cart
+  function removeItem(e) {
+    const name = e.target.getAttribute('data');
+    const itemsMinusChosen = cartItems.filter((item) => item.name !== name);
+    setCartItems(itemsMinusChosen);
   }
 
   // The opaque prop adds opacity to every other element when cart is shown
@@ -95,6 +102,7 @@ function App() {
         visible={cartVisible}
         hideCartFunc={toggleCart}
         addToCart={updateQuantity}
+        removeFromCart={removeItem}
       />
       <Footer projectName="shopping-cart" opaque={cartVisible} />
     </div>

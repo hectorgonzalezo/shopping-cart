@@ -1,7 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+import Button from './Button';
 
-function ShopItem({ quantity, name, img, speed, signal, addToCart}) {
+function ShopItem({
+  quantity,
+  name,
+  img,
+  speed,
+  signal,
+  addToCart,
+  removeFromCart,
+}) {
   return (
     <article className="item">
       <img src={require(`../assets/products/${img}`)} />
@@ -10,14 +19,17 @@ function ShopItem({ quantity, name, img, speed, signal, addToCart}) {
       {signal !== '' ? <h2>{signal}</h2> : null}
       {/* show quantity only for cart item */}
       {quantity !== 'none' ? (
-        <input
-          type="number"
-          className="quantity"
-          data={name}
-          value={quantity}
-          onChange={addToCart}
-          min="1"
-        />
+        <div>
+          <input
+            type="number"
+            className="quantity"
+            data={name}
+            value={quantity}
+            onChange={addToCart}
+            min="1"
+          />
+          <Button name="Remove" onClick={removeFromCart} data={name} small />
+        </div>
       ) : null}
     </article>
   );
@@ -29,6 +41,7 @@ ShopItem.defaultProps = {
   signal: '',
   quantity: 'none',
   addToCart: () => {},
+  removeFromCart: () => {},
 };
 
 ShopItem.propTypes = {
@@ -38,6 +51,7 @@ ShopItem.propTypes = {
   speed: PropTypes.string,
   signal: PropTypes.string,
   addToCart: PropTypes.func,
+  removeFromCart: PropTypes.func,
 };
 
 export default ShopItem;
