@@ -26,7 +26,7 @@ function Cart({ items, visible, hideCartFunc, addToCart, removeFromCart }) {
           </div>
         );
       })}
-      <Button name="Buy" />
+      <Button name="Buy Now" />
     </aside>
   );
 }

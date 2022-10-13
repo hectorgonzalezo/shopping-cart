@@ -16,12 +16,12 @@ const HomeContainer = styled.main`
   padding: 20px;
   align-items:  center;
   justify-items: center;
-  
+  gap: 20px; 
 
   h1{
     grid-column: 1 / 2;
     text-align: center;
-    font-size: 2rem;
+    font-size: clamp(1.3rem, 3vw, 2.5rem);
     color: var(--dark-spring-bud);
   }
 
@@ -41,7 +41,7 @@ function Home({ opaque }) {
   const autoplay = useRef(Autoplay({ delay: 4000 }));
   return (
     <HomeContainer id="home" className={opaque ? 'opaque' : ''}>
-      <h1>Development Boards and more</h1>
+      <h1>Development Boards for all your needs</h1>
       <Carousel
         sx={{ maxWidth: 600 }}
         align="center"
