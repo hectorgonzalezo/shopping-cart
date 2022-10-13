@@ -3,28 +3,28 @@ import styled from 'styled-components';
 import { string, func, element, bool } from 'prop-types';
 
 const StyledButton = styled.button`
-  border:  none;
-  font-size: ${(props) => props.small ? "1.4rem" : "2rem"};
+  border: none;
+  font-size: ${(props) => (props.small ? '1.4rem' : '2rem')};
   background-color: inherit;
-  color: ${(props) => props.small ? "var(--dark-spring-bud)" : "White"};
-  text-shadow: ${(props) => props.small ? "0.2px 0.2px 0.5px grey;" : "1px 1px 2px black;"}; 
+  color: ${(props) => (props.small ? 'var(--dark-spring-bud)' : 'White')};
+  text-shadow: ${(props) => (props.small ? '0.2px 0.2px 0.5px grey;' : '1px 1px 2px black;')};
 
-  svg{
+  svg {
     fill: white;
     filter: drop-shadow(1px 1px 2px black);
   }
 
-  svg:hover{
+  svg:hover {
     fill: var(--pale-spring-bud);
     filter: drop-shadow(1.5px 1.5px 3px black);
   }
 
-  &:hover{
-    color: ${(props) => props.small ? "white" : "var(--pale-spring-bud)"};
+  &:hover {
+    color: ${(props) => (props.small ? 'white' : 'var(--pale-spring-bud)')};
     cursor: pointer;
     text-shadow: 1.5px 1.5px 3px black;
   }
-  &:active{
+  &:active {
     position: relative;
     top: 1px;
     left: 1px;

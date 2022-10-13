@@ -18,4 +18,40 @@ describe('Cart component', () => {
 
     expect(mockHide).toBeCalledTimes(2);
   });
+
+  it('Items will have quantity and remove button', () => {
+    render(
+      <Cart hideCartFunc={() => {}} items={[{name: 'Teensy 2.0', quantity: '1' }]} />
+    );
+
+    const itemArticle = screen.getByRole('article');
+    const quantityInput = screen.getByRole('spinbutton');
+    const removeButton = screen.getByRole('button', { name: 'Remove' });
+
+    expect(itemArticle).toBeInTheDocument();
+    expect(quantityInput).toBeInTheDocument();
+    expect(removeButton).toBeInTheDocument();
+  });
+
+  it('Remove and quantity call their respective callbacks', () => {
+    const mockRemove = jest.fn();
+    const mockAdd = jest.fn();
+    render(
+      <Cart
+        hideCartFunc={() => {}}
+        items={[{ name: 'Teensy 2.0', quantity: '1' }]}
+        addToCart={mockAdd}
+        removeFromCart={mockRemove}
+      />
+    );
+
+    const quantityInput = screen.getByRole('spinbutton');
+    const removeButton = screen.getByRole('button', { name: 'Remove' });
+
+    userEvent.type(quantityInput, '{backspace}');
+    userEvent.click(removeButton);
+
+    expect(mockAdd).toBeCalled();
+    expect(mockRemove).toBeCalled();
+  });
 });
