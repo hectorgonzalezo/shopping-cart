@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.89e7138d.css",
+    "main.js": "/shopping-cart/static/js/main.2719fd21.js",
+    "static/media/tic-tac-toe.jpg": "/shopping-cart/static/media/tic-tac-toe.a96692d2b90ef225e11a.jpg",
+    "static/media/touch-display.jpeg": "/shopping-cart/static/media/touch-display.9d3a2e42e8d11f2556e3.jpeg",
+    "static/media/aiee.jpg": "/shopping-cart/static/media/aiee.b8a6a11706fa1d18500d.jpg",
+    "static/media/monolith.jpeg": "/shopping-cart/static/media/monolith.73fac705a7b51fb9c4ba.jpeg",
+    "static/media/audio_visualizer.jpg": "/shopping-cart/static/media/audio_visualizer.8723be64dc073b2f4115.jpg",
+    "static/media/spider.jpg": "/shopping-cart/static/media/spider.3787367bc3c3a01a76e8.jpg",
+    "static/media/polysynth.jpeg": "/shopping-cart/static/media/polysynth.683f1dee0a9415bb7c23.jpeg",
+    "static/media/teensy36.jpeg": "/shopping-cart/static/media/teensy36.87da70e3732f68f808e0.jpeg",
+    "static/media/teensy41.jpeg": "/shopping-cart/static/media/teensy41.dd13bcd30646f865a37b.jpeg",
+    "static/media/teensy35.jpeg": "/shopping-cart/static/media/teensy35.25e274fa1d5a803f2947.jpeg",
+    "static/media/teensypp20.jpeg": "/shopping-cart/static/media/teensypp20.86f0ac09beecb1d81478.jpeg",
+    "static/media/sd_adaptor.jpeg": "/shopping-cart/static/media/sd_adaptor.f5bf94c55f1f908428d9.jpeg",
+    "static/media/teensy40.jpeg": "/shopping-cart/static/media/teensy40.d51ccc38e7ac1fdbd038.jpeg",
+    "static/media/teensy20.jpeg": "/shopping-cart/static/media/teensy20.7fcac5671011aad00158.jpeg",
+    "static/media/teensy3_audio.jpeg": "/shopping-cart/static/media/teensy3_audio.9c284567f227cb8132e7.jpeg",
+    "static/media/teensy32.jpeg": "/shopping-cart/static/media/teensy32.43804dbc009d7e3a0a4e.jpeg",
+    "static/media/teensylc.jpeg": "/shopping-cart/static/media/teensylc.5510a67033d06b6897a0.jpeg",
+    "static/media/octo28_adaptor_1.jpeg": "/shopping-cart/static/media/octo28_adaptor_1.4fbeaedee71e72ba69db.jpeg",
+    "static/media/tutorial_kit.jpeg": "/shopping-cart/static/media/tutorial_kit.a34cb1cbc02044b03b05.jpeg",
+    "index.html": "/shopping-cart/index.html",
+    "static/media/cart.svg": "/shopping-cart/static/media/cart.287e70bcb24b99bd6facad3ebbef68ea.svg",
+    "main.89e7138d.css.map": "/shopping-cart/static/css/main.89e7138d.css.map",
+    "main.2719fd21.js.map": "/shopping-cart/static/js/main.2719fd21.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89e7138d.css",
+    "static/js/main.2719fd21.js"
+  ]
+}
