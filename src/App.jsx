@@ -70,14 +70,32 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header showCartFunc={toggleCart} opaque={cartVisible} />
+        <Header
+          showCartFunc={toggleCart}
+          opaque={cartVisible}
+          cartItems={cartItems}
+        />
         <Routes>
           <Route path="/" element={<Home opaque={cartVisible} />} />
           <Route path="shop" element={<Shop opaque={cartVisible} />} />
-          <Route path="shop/:id" element={<ItemDisplay items={cartItems} opaque={cartVisible} addToCart={addToCart}/>} />
+          <Route
+            path="shop/:id"
+            element={
+              <ItemDisplay
+                items={cartItems}
+                opaque={cartVisible}
+                addToCart={addToCart}
+              />
+            }
+          />
         </Routes>
       </BrowserRouter>
-      <Cart items={cartItems} visible={cartVisible} hideCartFunc={toggleCart} addToCart={updateQuantity} />
+      <Cart
+        items={cartItems}
+        visible={cartVisible}
+        hideCartFunc={toggleCart}
+        addToCart={updateQuantity}
+      />
       <Footer projectName="shopping-cart" opaque={cartVisible} />
     </div>
   );
