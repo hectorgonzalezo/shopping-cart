@@ -1,7 +1,11 @@
+
 #cart {
+  overflow: hidden;
   position: absolute;
   height: 100%;
-  right: -300px;
+  right: -500px;
+  top: auto;
+  width: clamp(300px, 30vw, 500px);
   opacity: 0;
   transition: all 1s;
   display: flex;
@@ -20,7 +24,6 @@
 #cart.visible{
   right: 0;
   opacity: 1;
-  width: clamp(300px, 30vw, 500px);
 }
 
 #cart .item{

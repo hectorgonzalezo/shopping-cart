@@ -23,6 +23,9 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+body{
+  overflow: hidden;
+}
 
 .App {
   display: grid;
@@ -30,6 +33,8 @@
   min-height: 100vh;
   height: 100%;
   width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 
