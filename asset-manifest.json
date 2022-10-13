@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.f53466df.css",
+    "main.css": "/shopping-cart/static/css/main.bd0474ea.css",
     "main.js": "/shopping-cart/static/js/main.a86287f5.js",
     "static/media/tic-tac-toe.jpg": "/shopping-cart/static/media/tic-tac-toe.a96692d2b90ef225e11a.jpg",
     "static/media/touch-display.jpeg": "/shopping-cart/static/media/touch-display.9d3a2e42e8d11f2556e3.jpeg",
@@ -23,11 +23,11 @@
     "static/media/tutorial_kit.jpeg": "/shopping-cart/static/media/tutorial_kit.a34cb1cbc02044b03b05.jpeg",
     "index.html": "/shopping-cart/index.html",
     "static/media/cart.svg": "/shopping-cart/static/media/cart.287e70bcb24b99bd6facad3ebbef68ea.svg",
-    "main.f53466df.css.map": "/shopping-cart/static/css/main.f53466df.css.map",
+    "main.bd0474ea.css.map": "/shopping-cart/static/css/main.bd0474ea.css.map",
     "main.a86287f5.js.map": "/shopping-cart/static/js/main.a86287f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.f53466df.css",
+    "static/css/main.bd0474ea.css",
     "static/js/main.a86287f5.js"
   ]
 }
