@@ -76,7 +76,7 @@ function App() {
   // The opaque prop adds opacity to every other element when cart is shown
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/shopping-cart">
         <Header
           showCartFunc={toggleCart}
           opaque={cartVisible}
