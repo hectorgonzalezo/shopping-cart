@@ -5,7 +5,7 @@ by Héctor Gonzalez Orozco
 
 Built using React as part of [The Odin Project](https://www.theodinproject.com/) curriculum.
 
-Shopping cart App built using React, made as practice of using reac-router-dom and testing using the react testing library.
+Shopping cart App built using React, made as practice of using react-router-dom and testing using the react testing library.
 
 ## Live Preview
 
