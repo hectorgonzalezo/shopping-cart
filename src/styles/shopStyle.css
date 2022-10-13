@@ -96,11 +96,14 @@
   display: flex;
 }
 
-.item-display h1,
-.item-display h2 {
+.item-display h1{
   grid-column: 1 / 2;
-  font-size: 2rem;
+  font-size: 2.3rem;
   text-align: center;
+}
+
+.item-display h2{
+  font-size: 1.3rem;
 }
 
 .item-display * {
@@ -111,7 +114,8 @@
   font-size: 1rem;
 }
 
-.item-display p::before {
+.item-display p::before,
+h2::before {
   content: '- '
 }
 
