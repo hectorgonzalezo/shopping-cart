@@ -34,6 +34,17 @@ const HomeContainer = styled.main`
       border-radius: 10%;
     }
   }
+
+  @media (max-width: 700px){
+    grid-template-columns: 1fr;
+
+    h1 {
+      font-size 1.5rem;
+    }
+    div{
+      grid-column 1 / 2;
+    }
+}
 `;
 
 function Home({ opaque }) {

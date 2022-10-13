@@ -48,9 +48,11 @@ function Shop({ opaque }) {
     <main id="shop" className={opaque ? 'opaque' : ''}>
       <div id="filters">
         <h1>Filter items by type</h1>
-        {itemTypes.map((type) => (
-          <Button key={type} name={capitalize(type)} onClick={() => filterItems(type)} />
-        ))}
+        <div>
+          {itemTypes.map((type) => (
+            <Button key={type} name={capitalize(type)} onClick={() => filterItems(type)} />
+          ))}
+        </div>
       </div>
       <div id="items">
         {itemsDisplayed.map((item) => (

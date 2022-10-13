@@ -7,7 +7,7 @@
 header h1{
   flex-grow: 2;
   padding: 20px;
-  font-size: clamp(2rem, 6vw, 4rem);
+  font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: bold;
   color: var(--pale-spring-bud-2);
   text-shadow: 3px 3px 1px var(--dark-spring-bud);
@@ -37,4 +37,13 @@ button:hover + #cart-number{
   padding: 3px 5px 3px 5px;
   border-radius: 100%;
   box-shadow: 1px 1px 3px black;
+}
+
+@media only screen and (max-width: 700px){
+  .App header {
+    flex-direction: column;
+  }
+  ul{
+    width:  70%
+  }
 }
