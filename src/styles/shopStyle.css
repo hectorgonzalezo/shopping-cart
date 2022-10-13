@@ -115,7 +115,7 @@
 }
 
 .item-display p::before,
-h2::before {
+.item-display h2::before {
   content: '- '
 }
 
