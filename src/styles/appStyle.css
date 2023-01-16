@@ -39,6 +39,7 @@ body{
 
 main{
   background: var(--gradient-top);
+  padding: 10px;
 }
 
 header,
