@@ -43,9 +43,9 @@
   flex-direction: column;
   align-items: center;
   gap: 7px;
-  height: 100%;
+  height: auto;
   width: auto;
-  padding: 15px 15px 0px 15px;
+  padding: 20px;
   border-radius: 1rem;
   color: black;
   word-wrap: break-word;
@@ -58,7 +58,7 @@
 }
 
 .item:hover {
-  outline: 3px solid var(--dark-spring-bud);
+  box-shadow: 0px 0px 1px 2px var(--dark-spring-bud);
 }
 
 *:link {
@@ -123,7 +123,7 @@
   display: grid;
   height: auto;
   max-width: 500px;
-  padding: 15px;
+  padding: 25px;
   align-items: center;
   justify-content: center;
 

@@ -78,9 +78,9 @@ input[type=number]:hover{
   align-items: center;
   justify-content: center;
   width: auto;
- height: auto;
+  height: auto;
 }
 
-* {
-  /* outline: 1px dashed red; */
+.swiper-slide img {
+  width: 500px;
 }
