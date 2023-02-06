@@ -17,8 +17,6 @@ bottom: 0;
   z-index: 1;
 }
 
-
-
 #cart button:first-child{
   align-self: flex-start;
   width: 20px;

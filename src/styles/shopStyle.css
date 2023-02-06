@@ -164,9 +164,9 @@ form input {
   }
 
   #filters>div {
-    width: 100vw;
+    width: 100%;
+    gap: 3px;
     flex-direction: row;
-    justify-content: space-around;
   }
 
   #filters button{
